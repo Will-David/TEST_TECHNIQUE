@@ -86,13 +86,13 @@ export default function AddTaskPage() {
                         <div className="gap-2 flex items-center justify-start bg-white text-gray-800">
                         <Button 
                             type="submit" 
-                            className="bg-blue-500  rounded-lg p-2 text-white w-max"
+                            className="bg-blue-500  rounded-lg p-2 text-white w-max cursor-pointer"
                         >
                             Ajoutez la tâche
                         </Button>
                         <Link
                             to = {routesAlias.task.home}
-                            className="bg-red-500  rounded-lg p-2 text-white w-max"
+                            className="bg-red-500  rounded-lg p-2 text-white w-max cursor-pointer"
                         >
                         Annuler
                         </Link>

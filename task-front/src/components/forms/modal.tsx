@@ -16,10 +16,10 @@ export default function ModalBox({ openModal, setOpenModal, onConfirm }: ModalBo
             Voulez-vous vraiment supprimer cette tâche ?
           </h3>
           <div className="flex justify-center gap-4">
-            <Button color="red" onClick={onConfirm}>
+            <Button className = "cursor-pointer" color="red" onClick={onConfirm}>
               Oui
             </Button>
-            <Button color="alternative" onClick={() => setOpenModal(false)}>
+            <Button className = "cursor-pointer" color="alternative" onClick={() => setOpenModal(false)}>
               Non, Annuler
             </Button>
           </div>
