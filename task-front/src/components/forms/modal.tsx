@@ -8,7 +8,7 @@ interface ModalBoxProps {
 
 export default function ModalBox({ openModal, setOpenModal, onConfirm }: ModalBoxProps) {
   return (
-    <Modal show={openModal} size="md" onClose={() => setOpenModal(false)} popup>
+    <Modal className = "bg-transparent" show={openModal} size="md" onClose={() => setOpenModal(false)} popup>
       <ModalHeader />
       <ModalBody>
         <div className="text-center">
