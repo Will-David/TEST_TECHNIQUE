@@ -83,18 +83,30 @@ export default function AddTaskPage() {
                                 <option value="Fait">Fait</option>
                             </select>
                         </div>
-                        <div className="gap-2 flex items-center justify-start bg-white text-gray-800">
+                        <div className="
+                                        gap-2 flex items-center 
+                                        justify-start bg-white 
+                                        text-gray-800"
+                        >
                         <Button 
                             type="submit" 
-                            className="bg-blue-500  rounded-lg p-2 text-white w-max cursor-pointer"
+                            className="
+                                    bg-blue-500 rounded-lg 
+                                    p-2 text-white 
+                                    w-max cursor-pointer 
+                                    hover:bg-blue-700 
+                                    duration-200"
                         >
-                            Ajoutez la tâche
+                                    Ajoutez la tâche
                         </Button>
                         <Link
                             to = {routesAlias.task.home}
-                            className="bg-red-500  rounded-lg p-2 text-white w-max cursor-pointer"
+                            className="bg-red-500  rounded-lg 
+                                         p-2 text-white 
+                                         w-max cursor-pointer 
+                                       hover:bg-red-600 duration-200"
                         >
-                        Annuler
+                                        Annuler
                         </Link>
                         </div>
                     </form>

@@ -37,7 +37,7 @@ export default function ListTaskPage() {
           <h2 className="text-2xl font-bold">Liste des tâches</h2>
           <Link
             to={routesAlias.task.addTask}
-            className="bg-blue-500 rounded-lg p-2 text-white w-max"
+            className="bg-blue-500 rounded-lg p-2 text-white w-max cursor-pointer hover:bg-blue-600 duration-200"
           >
             Ajouter une tâche
           </Link>
@@ -64,14 +64,14 @@ export default function ListTaskPage() {
                     <Link to={routesAlias.task.update_task.replace(":id", task.id)}>
                       <Button
                         type="button"
-                        className="bg-blue-500 rounded-lg p-1 px-6 py-1 text-white"
+                        className="bg-blue-500 rounded-lg p-1 px-6 py-1 text-white cursor-pointer hover:bg-blue-600 duration-200"
                       >
                         Modifier
                       </Button>
                     </Link>
                     <Button
                       type="button"
-                      className="bg-red-500 rounded-lg p-1 px-6 py-1 text-white"
+                      className="bg-red-500 rounded-lg p-1 px-6 py-1 text-white cursor-pointer hover:bg-red-600 duration-200"
                       onClick={() => {
                         setTaskToDelete(task.id);
                         setOpenModal(true);
