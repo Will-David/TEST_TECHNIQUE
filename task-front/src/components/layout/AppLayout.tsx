@@ -17,7 +17,7 @@ export default function AppLayout() {
             "
         >
             <Img className="w-50" src="../Logo-CFP-white-300x59.webp"></Img>
-            GFP - Task Manager
+            CFP - Task Manager
         </h1>
         <Outlet/>
     </Body>
